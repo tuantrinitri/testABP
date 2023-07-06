@@ -1,0 +1,1 @@
+2023-07-06 09:19:36.180 +07:00 [INF] Starting Backend.MedicineService.HttpApi.Host.

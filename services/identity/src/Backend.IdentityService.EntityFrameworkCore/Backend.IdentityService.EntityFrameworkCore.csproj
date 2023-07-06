@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>Backend.IdentityService</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\..\modules\identityserver\src\Backend.IdentityServer.EntityFrameworkCore\Backend.IdentityServer.EntityFrameworkCore.csproj" />
+      <ProjectReference Include="..\..\..\..\modules\identity\src\Backend.Identity.EntityFrameworkCore\Backend.Identity.EntityFrameworkCore.csproj" />
+      <ProjectReference Include="..\Backend.IdentityService.Domain\Backend.IdentityService.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+</Project>

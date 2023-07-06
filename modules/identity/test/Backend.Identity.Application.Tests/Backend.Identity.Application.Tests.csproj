@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\Backend.Identity.Application\Backend.Identity.Application.csproj" />
+      <ProjectReference Include="..\Backend.Identity.Domain.Tests\Backend.Identity.Domain.Tests.csproj" />
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.3" />
+    </ItemGroup>
+
+</Project>

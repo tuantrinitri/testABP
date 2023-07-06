@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>Backend.Identity</RootNamespace>
+        <UserSecretsId>9e3c055b-4be0-45ed-9c5c-3e381d24bcbb</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="7.2.2" />
+      <PackageReference Include="Volo.Abp.AspNetCore.TestBase" Version="7.2.2" />  
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\Backend.Identity.AspNetCore\Backend.Identity.AspNetCore.csproj" />
+      <ProjectReference Include="..\Backend.Identity.Domain.Tests\Backend.Identity.Domain.Tests.csproj" />
+      <ProjectReference Include="..\Backend.Identity.TestBase\Backend.Identity.TestBase.csproj" />  
+    </ItemGroup>
+
+</Project>

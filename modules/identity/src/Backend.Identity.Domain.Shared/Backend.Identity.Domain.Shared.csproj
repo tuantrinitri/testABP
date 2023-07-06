@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>Backend.Identity</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Volo.Abp.Auditing.Contracts" Version="7.2.2" />
+      <PackageReference Include="Volo.Abp.Features" Version="7.2.2" />
+      <PackageReference Include="Volo.Abp.MultiTenancy" Version="7.2.2" />
+      <PackageReference Include="Volo.Abp.Users.Domain.Shared" Version="7.2.2" />
+      <PackageReference Include="Volo.Abp.Validation" Version="7.2.2" />
+    </ItemGroup>
+</Project>
