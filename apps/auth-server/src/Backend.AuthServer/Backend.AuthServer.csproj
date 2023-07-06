@@ -46,4 +46,8 @@
       <ProjectReference Include="..\..\..\..\shared\Backend.Shared.Hosting.AspNetCore\Backend.Shared.Hosting.AspNetCore.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="wwwroot\uploads\images\" />
+    </ItemGroup>
+
 </Project>
