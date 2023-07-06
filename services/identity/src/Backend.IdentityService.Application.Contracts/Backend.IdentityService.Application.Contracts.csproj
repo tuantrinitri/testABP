@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>Backend.IdentityService</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\..\modules\identity\src\Backend.Identity.Application.Contracts\Backend.Identity.Application.Contracts.csproj" />
+      <ProjectReference Include="..\Backend.IdentityService.Domain.Shared\Backend.IdentityService.Domain.Shared.csproj" />
+    </ItemGroup>
+
+</Project>

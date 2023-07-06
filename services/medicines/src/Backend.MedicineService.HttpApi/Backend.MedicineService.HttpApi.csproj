@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Backend.MedicineService</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="7.2.2" />
+    <ProjectReference Include="..\Backend.MedicineService.Application.Contracts\Backend.MedicineService.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Test\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\Test\TestModel.cs" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>Backend.IdentityServer</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Backend.IdentityServer.EntityFrameworkCore.Tests\Backend.IdentityServer.EntityFrameworkCore.Tests.csproj" />
+      <ProjectReference Include="..\Backend.IdentityServer.TestBase\Backend.IdentityServer.TestBase.csproj" />
+    </ItemGroup>
+
+</Project>

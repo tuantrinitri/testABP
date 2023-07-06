@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>Backend.IdentityServer</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="IdentityServer4.AspNetIdentity" Version="4.1.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\identity\src\Backend.Identity.Domain.Shared\Backend.Identity.Domain.Shared.csproj" />
+      <ProjectReference Include="..\..\..\identity\src\Backend.Identity.Domain\Backend.Identity.Domain.csproj" />
+      <ProjectReference Include="..\Backend.IdentityServer.Domain.Shared\Backend.IdentityServer.Domain.Shared.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>Backend.Account</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\identity\src\Backend.Identity.Application\Backend.Identity.Application.csproj" />
+      <ProjectReference Include="..\Backend.Account.Application.Contracts\Backend.Account.Application.Contracts.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Volo.Abp.UI.Navigation" Version="7.2.2" />
+    </ItemGroup>
+
+</Project>

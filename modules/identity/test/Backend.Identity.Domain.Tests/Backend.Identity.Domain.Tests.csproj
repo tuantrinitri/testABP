@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>Backend.Identity</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\Backend.PermissionManagement.Domain.Identity\Backend.PermissionManagement.Domain.Identity.csproj" />
+      <ProjectReference Include="..\Backend.Identity.TestBase\Backend.Identity.TestBase.csproj" />
+      <ProjectReference Include="..\Backend.Identity.EntityFrameworkCore.Tests\Backend.Identity.EntityFrameworkCore.Tests.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="NSubstitute" Version="5.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.Extensions.Identity.Core">
+        <HintPath>C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\7.0.5\Microsoft.Extensions.Identity.Core.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>

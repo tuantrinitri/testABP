@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>Backend.Account.Web</RootNamespace>
+        <OutputType>Library</OutputType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="Modules\**\*.js" />
+        <EmbeddedResource Include="Modules\**\*.css" />
+        <EmbeddedResource Include="Pages\**\*.js" />
+        <EmbeddedResource Include="Pages\**\*.css" />
+        <EmbeddedResource Include="Components\**\*.js" />
+        <EmbeddedResource Include="Components\**\*.css" />
+        <EmbeddedResource Include="wwwroot\**\*.js" />
+        <EmbeddedResource Include="wwwroot\**\*.css" />
+        <Content Remove="Modules\**\*.js" />
+        <Content Remove="Modules\**\*.css" />
+        <Content Remove="Pages\**\*.js" />
+        <Content Remove="Pages\**\*.css" />
+        <Content Remove="Components\**\*.js" />
+        <Content Remove="Components\**\*.css" />
+        <Content Remove="wwwroot\**\*.js" />
+        <Content Remove="wwwroot\**\*.css" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared" Version="7.2.2" />
+      <PackageReference Include="Volo.Abp.AutoMapper" Version="7.2.2" />
+      <PackageReference Include="Volo.Abp.UI.Navigation" Version="7.2.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\identity\src\Backend.Identity.AspNetCore\Backend.Identity.AspNetCore.csproj" />
+      <ProjectReference Include="..\Backend.Account.Application.Contracts\Backend.Account.Application.Contracts.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="7.0.5" />
+    </ItemGroup>
+
+</Project>

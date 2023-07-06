@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Backend.IdentityService</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Backend.IdentityService.EntityFrameworkCore.Tests\Backend.IdentityService.EntityFrameworkCore.Tests.csproj" />
+    <ProjectReference Include="..\Backend.IdentityService.TestBase\Backend.IdentityService.TestBase.csproj" />
+  </ItemGroup>
+
+</Project>

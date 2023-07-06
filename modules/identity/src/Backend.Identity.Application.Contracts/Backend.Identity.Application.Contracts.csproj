@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>Backend.Identity</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.Authorization" Version="7.2.2" />
+        <PackageReference Include="Volo.Abp.PermissionManagement.Application.Contracts" Version="7.2.2" />
+        <PackageReference Include="Volo.Abp.Users.Abstractions" Version="7.2.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Backend.Identity.Domain.Shared\Backend.Identity.Domain.Shared.csproj" />
+    </ItemGroup>
+    
+</Project>

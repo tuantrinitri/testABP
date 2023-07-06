@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>Backend.Account</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\identity\src\Backend.Identity.HttpApi\Backend.Identity.HttpApi.csproj" />
+      <ProjectReference Include="..\Backend.Account.Application.Contracts\Backend.Account.Application.Contracts.csproj" />
+    </ItemGroup>
+
+</Project>
